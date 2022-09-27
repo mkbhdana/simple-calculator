@@ -53,7 +53,7 @@ class Calculator {
         computation = prev ** current;
         break;
       case "%":
-        computation = (prev / 100) * current = 1;
+        computation = prev / 100 || (prev / 100) * current;
         break;
       default:
         return;
